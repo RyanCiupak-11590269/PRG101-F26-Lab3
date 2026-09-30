@@ -1,16 +1,16 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Ryan Ciupak
+# Date: Sept. 30, 2026
 # Purpose: 
 # Usage: ./lab3a.py
 
-# TODO 1: Import the random module
+import random
+numbers = []
 
-# TODO 2: Create an empty list called numbers
-
-# TODO 3: Create a for loop that generates 20 random numbers between 0 and 99, and adds them to our numbers list 
-
-# TODO 4: Print the numbers list, then sort it in lowest to highest order, and print it once more.
-
+for i in range(20):
+    numbers.append(random.randint(0, 99))
+print(numbers)
+numbers.sort()
+print(numbers)
